@@ -1,0 +1,8 @@
+* {
+    display: flex-inline;
+    box-sizing: border-box;
+}
+
+inputSection {
+    flex-direction: row;
+}
