@@ -1,5 +1,5 @@
-const APIkey = require('./secrets.js')
-
+require('dotenv').config();
+const APIkey = process.env.APIKEY
 const fruitForm = document.querySelector('#inputSection form');
 const fruitList = document.querySelector('#fruitSection ul');
 const fruitNutrition = document.querySelector('#nutritionSection p');
