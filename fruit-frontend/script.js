@@ -1,5 +1,5 @@
 require('dotenv').config();
-const APIkey = process.env.APIKEY
+const APIkey = process.env.APIKEY;
 const fruitForm = document.querySelector('#inputSection form');
 const fruitList = document.querySelector('#fruitSection ul');
 const fruitNutrition = document.querySelector('#nutritionSection p');
@@ -39,7 +39,7 @@ function addFruit(fruit) {
 }
 async function fetchFruitData(fruit){
     try {
-        const resp = await fetch(`https://fruity-api.onrender.com/fruits/${fruit}`)
+        const resp = await fetch(`https://fruit-api-8axf.onrender.com/fruits/${fruit}`)
         if(resp.ok) {
             const data = await resp.json()
             addFruit(data)
